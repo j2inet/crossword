@@ -33,7 +33,7 @@ find . -maxdepth 1 -type f  -print0 | while IFS= read -r -d $'\0' file; do
 	index=$((index+1))
 done
 
-echo"x:$x";
+echo "x:$x";
 
 echo "making json"
 echo "{'baseName': '$OUTPUT_FILE'}" > description.json
